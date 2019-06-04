@@ -25,6 +25,9 @@
     ],
     "jsdoc-format": true,
     "no-consecutive-blank-lines": [true],
-    "semicolon": [true, "always"]
+    "semicolon": [true, "always"],
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "sourceMap": true
   }
 }

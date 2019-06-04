@@ -1,5 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   // 웹팩은 ./src/index로부터 파일들을 가져올 것이다.
@@ -15,7 +17,6 @@ module.exports = {
   },
   module: {
     rules: [
-      // 우리는 JSX와 tsx 파일들을 로드 하기 위해 babel-loader 사용한다.
       {
         test: /\.(ts|js)x?$/,
         exclude: /node_modules/,
@@ -23,16 +24,29 @@ module.exports = {
           loader: "babel-loader"
         }
       },
-      // 우리의 css 파일들을 번들링 해서 하나의 파일로 만든 뒤 문서의 style 태그의 넣어주기 위해 style-loader를 사용한다.
       {
-        test: /\.css$/,
-        use: ["style-loader", "css-loader"]
+        test: /\.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              hmr: process.env.NODE_ENV === "development"
+            }
+          },
+          "css-loader",
+          "sass-loader",
+          "postcss-loader"
+        ]
       }
     ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html"
+    }),
+    new MiniCssExtractPlugin({
+      filename: devMode ? "[name].css" : "[name].[hash].css",
+      chunkFilename: devMode ? "[id].css" : "[id].[hash].css"
     })
   ]
 };

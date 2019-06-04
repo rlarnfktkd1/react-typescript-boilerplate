@@ -20,7 +20,7 @@
     "noEmit": true,
 
     // 모든 엄격한 타입 검사 옵션을 활성화
-    "strict": true,
+    "strict": false,
 
     // https://
     "esModuleInterop": true,
@@ -39,7 +39,6 @@
       "es2017.object",
       "dom"
     ],
-
     // 모듈 설정
     "module": "es6",
 
@@ -48,7 +47,7 @@
     "removeComments": true,
 
     // 항상 strict mode로 분석할지 여부
-    "alwaysStrict": true,
+    "alwaysStrict": false,
 
     // 도달 불가능한 코드에 대한 허용 여부
     "allowUnreachableCode": false,
