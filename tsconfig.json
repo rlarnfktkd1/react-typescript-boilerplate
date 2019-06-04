@@ -1,0 +1,82 @@
+{
+  "compilerOptions": {
+    // ECMAScript의 최신 버전을 타겟으로 한다.
+    // 사용할 ECMAScript 버전 설정
+    "target": "esnext",
+
+    // 결과값 저장 디렉터리 경로
+    "outDir": "./dist",
+
+    // null과 undefined 타입 구분 여부
+    "strictNullChecks": true,
+
+    // 모듈 해석(검색) 방식 설정
+    "moduleResolution": "node",
+
+    // 자바스크립트 파일 컴파일 허용 여부.
+    "allowJs": true,
+
+    // 결과 파일을 저장하지 않음
+    "noEmit": true,
+
+    // 모든 엄격한 타입 검사 옵션을 활성화
+    "strict": true,
+
+    // https://
+    "esModuleInterop": true,
+
+    // jsx 지원
+    "jsx": "react",
+
+    //non-relative 모듈 혹은 paths 옵션의 기준 디렉토리
+    "baseUrl": "./src",
+
+    //컴파일에 포함될 라이브러리 파일 목록
+    "lib": [
+      "es2015",
+      "dom.iterable",
+      "es2016.array.include",
+      "es2017.object",
+      "dom"
+    ],
+
+    // 모듈 설정
+    "module": "es6",
+
+    // 주석 삭제
+    // @TODO '/*!*/' 주석 테스트 필요
+    "removeComments": true,
+
+    // 항상 strict mode로 분석할지 여부
+    "alwaysStrict": true,
+
+    // 도달 불가능한 코드에 대한 허용 여부
+    "allowUnreachableCode": false,
+
+    // any 타입 금지
+    "noImplicitAny": false,
+
+    //this 타입을 명시적으로 지정하지 않으면 에러 발생
+    "noImplicitThis": false,
+
+    //사용 안된 지역변수에 대한 오류 보고 여부
+    "noUnusedLocals": true,
+
+    // 사용안한 파라미터에 대한 오류 보고 여부
+    "noUnusedParameters": true,
+
+    // 함수의 모든 경로가 값을 반환하지 않으면 에러 발생
+    "noImplicitReturns": true,
+
+    // 잘못 적혔다고 판단되는 switch 문에 대한 에러 발생
+    "noFallthroughCasesInSwitch": true,
+
+    // 파일명에 대소문자 구분하지 않아도 되는 기능 사용 여부
+    // 파일 이름에 일관된 casing 강제 적용
+    "forceConsistentCasingInFileNames": false,
+
+    //tslib에서 helpers를 가져온다.
+    // 중복 코드를 없애기 위한 최적화용 옵션
+    "importHelpers": true
+  }
+}
