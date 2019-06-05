@@ -53,7 +53,7 @@
     "allowUnreachableCode": false,
 
     // any 타입 금지
-    "noImplicitAny": false,
+    "noImplicitAny": true,
 
     //this 타입을 명시적으로 지정하지 않으면 에러 발생
     "noImplicitThis": false,

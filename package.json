@@ -16,6 +16,7 @@
     "@types/node-sass": "^4.11.0",
     "@types/react": "^16.8.19",
     "@types/react-dom": "^16.8.4",
+    "@types/react-redux": "^7.0.9",
     "babel-loader": "^8.0.6",
     "css-loader": "^2.1.1",
     "html-webpack-plugin": "^3.2.0",
@@ -36,6 +37,9 @@
     "postcss-scss": "^2.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "^4.0.1",
+    "redux-connect-decorator": "^0.2.1",
     "sass-loader": "^7.1.0",
     "sugarss": "^2.0.0"
   },
