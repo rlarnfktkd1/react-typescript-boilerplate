@@ -9,7 +9,10 @@
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@babel/plugin-proposal-class-properties": "^7.4.4",
+    "@babel/plugin-proposal-export-default-from": "^7.2.0",
     "@babel/plugin-proposal-object-rest-spread": "^7.4.4",
+    "@babel/plugin-transform-runtime": "^7.4.4",
+    "@babel/polyfill": "^7.4.4",
     "@babel/preset-env": "^7.4.5",
     "@babel/preset-react": "^7.0.0",
     "@babel/preset-typescript": "^7.3.3",
@@ -31,6 +34,9 @@
     "webpack-dev-server": "^3.5.1"
   },
   "dependencies": {
+    "@babel/runtime": "^7.4.5",
+    "@types/redux-saga": "^0.10.5",
+    "babel-polyfill": "^6.26.0",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.6.0",
@@ -40,6 +46,7 @@
     "react-redux": "^7.0.3",
     "redux": "^4.0.1",
     "redux-connect-decorator": "^0.2.1",
+    "redux-saga": "^1.0.2",
     "sass-loader": "^7.1.0",
     "sugarss": "^2.0.0"
   },

@@ -28,9 +28,8 @@ Let make react-typescript-boilerplate with me
 
 ----------------Redux 추가 하기----------------
 18. yarn add redux, react-redux 설치하기
-
-
-15. touch ./src/reducers.js => Action, Action Creator, Reducers 정의
-
-
+19. reducers.js(Action, Action Creator, Reducer) 정의
+20. Components에 Counter.tsx와 Control.tsx, Value.tsx 파일을 기술한다.
+21. App.tsx에 Counter.tsx 컴포넌트를 import gownsek.
+22. index.tsx에 Store를 만들어주고 Provider를 통해서 App컴포넌트 아래에 모든 컴포넌트에 뿌려준다.
 

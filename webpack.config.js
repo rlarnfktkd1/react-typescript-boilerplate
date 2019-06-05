@@ -5,7 +5,7 @@ const devMode = process.env.NODE_ENV !== "production";
 
 module.exports = {
   // 웹팩은 ./src/index로부터 파일들을 가져올 것이다.
-  entry: "./src/index",
+  entry: ['@babel/polyfill', './src/index'],
   // rmflrh /dist에 bundle.js로 결과물을 내보낼것이다.
   output: {
     path: path.join(__dirname, "/dist"),
